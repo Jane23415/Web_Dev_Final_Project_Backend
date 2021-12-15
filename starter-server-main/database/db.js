@@ -6,6 +6,9 @@ const {dbName, dbUser, dbPwd} = require('./utils/configDB');
 
 // Confirmation message (limit these in production);
 console.log('Opening database connection');
+console.log(dbName)
+console.log(dbPwd)
+console.log(dbUser)
 
 // This is our entry point, we instantiate the Sequelize instance accordingly;
 const db = new Sequelize(dbName, dbUser, dbPwd, {
