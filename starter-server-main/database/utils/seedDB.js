@@ -3,7 +3,7 @@ const { Campus, Student } = require('../models');
 const seedDB = async () => {
 	const dummy_campus = await Campus.create({
 		name: "Hunter College",
-		imageURL: "",
+		imageURL: "https://sdmny.hunter.cuny.edu/wp-content/uploads/2019/01/hunter-college-logo.png",
 		address: "",
 		description: "This is a school in NYC."
 	});
