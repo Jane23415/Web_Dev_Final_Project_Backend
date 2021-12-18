@@ -17,6 +17,9 @@ const seedDB = async () => {
 	const dummy_student = await Student.create({
 		firstname: "Joe",
       	lastname: "Shmo",
+		imageURL: "https://pwco.com.sg/wp-content/uploads/2020/05/Generic-Profile-Placeholder-v3.png",
+		email: "123@email.com",
+		gpa: "2.0"
 	});
 
 	await dummy_student.setCampus(dummy_campus);
