@@ -38,6 +38,7 @@ router.get('/:id', ash(async(req, res) => {
 
 /** ADD NEW STUDENT */
 router.post('/', function(req, res, next) {
+  console.log(typeof(req.body.gpa), req.body.gpa)
   Student.create(req.body)
     .then(createdStudent => res.status(200).json(createdStudent))
     .catch(err => next(err));
