@@ -9,7 +9,7 @@ const seedDB = async () => {
 	});
 	const dummy_campus2 = await Campus.create({
 		name: "Harvard",
-		imageURL: "",
+		imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Harvard_University_logo.svg/2560px-Harvard_University_logo.svg.png",
 		address: "",
 		description: "This is a school in MA."
 	});
